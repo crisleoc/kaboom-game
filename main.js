@@ -5,10 +5,10 @@ kaboom({
     font: "sinko",
 })
 
-loadSprite("AlienGreen1R", "../art/Characters/character_0000_R.png")
-loadSprite("AlienGreen2R", "../art/Characters/character_0001_R.png")
-loadSprite("AlienGreen1L", "../art/Characters/character_0000_L.png")
-loadSprite("AlienGreen2L", "../art/Characters/character_0001_L.png")
+loadSprite("AlienGreen1R", "./art/Characters/character_0000_R.png")
+loadSprite("AlienGreen2R", "./art/Characters/character_0001_R.png")
+loadSprite("AlienGreen1L", "./art/Characters/character_0000_L.png")
+loadSprite("AlienGreen2L", "./art/Characters/character_0001_L.png")
 
 let score = 0;
 let lvl = 1;
