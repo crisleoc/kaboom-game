@@ -156,4 +156,16 @@ scene("lose", () => {
     })
 })
 
-go("game")
+scene("start", () => {
+    add([
+        text(`Click the screen to start\nRight: press A\nLeft: press D\nJump: press space bar`, { size: 40 }),
+        pos(center()),
+        origin("center"),
+    ])
+
+    onClick(() => {
+        go("game")
+    })
+})
+
+go("start")
