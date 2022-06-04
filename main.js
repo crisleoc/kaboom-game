@@ -19,6 +19,12 @@ let objVelocity = 0
 
 scene("game", () => {
 
+    score = 0;
+    lvl = 1;
+    playerVelocity = 300
+    value = 0
+    objVelocity = 0
+
     const AlienGreen = add([
         sprite("AlienGreen1R"),
         pos(500, height() - 50),
@@ -140,10 +146,14 @@ scene("game", () => {
 
 scene("lose", () => {
     add([
-        text(`Game Over\nScore: ${score}\nLvl: ${lvl}`, { size: 40 }),
+        text(`Game Over\nScore: ${score}\nLvl: ${lvl}\nPress enter to restart`, { size: 40 }),
         pos(center()),
         origin("center"),
     ])
+
+    keyPress("enter", () => {
+        go("game")
+    })
 })
 
 go("game")
